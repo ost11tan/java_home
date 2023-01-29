@@ -44,6 +44,20 @@ public class Main {
             gender.add(colomn[4]);
             
         }
+        for (int i = 0; i < age.size() - 1; i++) {
+            for(int j = 0; j < age.size() - i - 1; j++) {
+                if(age.get(index.get(j+1))< (age.get(index.get(j))) ){
+                    int swap = index.get(j);
+                    index.remove(j);
+                    index.add(j+1,swap);
+                }
+    
+        }
+        }
+
+
+
+
         for (int i = 0; i < index.size(); i++) {
 
             System.out.printf(family.get(index.get(i))+" ");
